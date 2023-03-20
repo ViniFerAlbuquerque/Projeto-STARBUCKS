@@ -66,7 +66,7 @@ button {
 }
 
 .starbucks {
-    width: 340px;
+    width: 300px;
 }
 
 .botao-menu {
@@ -80,6 +80,12 @@ button {
     transform: translateY(-30px);
 }
 
+#piscando{
+    color: #017143;
+    font-size: 35px;
+    font-weight: 500;
+}
+
 .circulo {
     position: absolute;
     width: 100%;
@@ -89,4 +95,61 @@ button {
     left: 0;
     clip-path: circle(600px at right 800px);
     z-index: -1;
+}
+@media screen and (max-width: 850px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+        background: #F0FFF0;
+    }
+
+    .logo {
+        width: 130px;
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+
+    .circulo {
+        display: none;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 500px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 50px
+    }
+
+    span {
+        font-size: 65px;
+    }
+
+    .caixa-imagem {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    .caixa_texto {
+        width: 730px;
+        margin-top: 20px;
+    }
+
+    .botao-menu {
+        margin-top: 150px;
+    }
+
+    #piscando {
+        margin-left: 70px; 
+    }
+
+    button {
+        margin-left: 150px
+    }
 }
